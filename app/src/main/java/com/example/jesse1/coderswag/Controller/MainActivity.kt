@@ -18,5 +18,13 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryAdapter(this, DataService.categories)
 
         categoryListView.adapter = adapter
+
+// does not work for recycler views
+//        categoryListView.setOnItemClickListener { adapterView, view, i, l ->
+//            val category = DataService.categories[i]
+//            Toast.makeText(this, "You clicked on the ${category.title} cell", Toast.LENGTH_SHORT).show()
+//        }
+
+
     }
 }
